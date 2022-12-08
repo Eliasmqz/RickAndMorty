@@ -31,7 +31,7 @@ function App() {
   return (
     loading ? 
       <section className="loading_page">
-        <img src="./public/loading.png" alt="loading_img" className="loading_img" />
+        <img src="url(./public/loading.png)" alt="loading_img" className="loading_img" />
       </section>
     :
       <div className="App">
