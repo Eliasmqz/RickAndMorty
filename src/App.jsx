@@ -3,6 +3,7 @@ import { useEffect, useState } from "react"
 import Location from "./components/Location"
 import ResidentInfo from "./components/ResidentInfo"
 import getRandomNumber from "./utils/getRandomNumber"
+import imageLoader from "./public/loading.png"
 
 function App() {
   const [universe, setUniverse] = useState()
@@ -31,7 +32,7 @@ function App() {
   return (
     loading ? 
       <section className="loading_page">
-        <img src="url(./public/loading.png)" alt="loading_img" className="loading_img" />
+        <img src={imageLoader} alt="loading_img" className="loading_img" />
       </section>
     :
       <div className="App">
