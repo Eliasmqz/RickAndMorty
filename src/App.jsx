@@ -3,7 +3,8 @@ import { useEffect, useState } from "react"
 import Location from "./components/Location"
 import ResidentInfo from "./components/ResidentInfo"
 import getRandomNumber from "./utils/getRandomNumber"
-import imageLoader from "./public/loading.png"
+import imageLoader from "../public/loading.png"
+import noResidentsImg from "../public/no_residents.png"
 
 function App() {
   const [universe, setUniverse] = useState()
@@ -50,7 +51,7 @@ function App() {
           </section> :
           <section className="no_residents">
             <h2 className="no_residents--txt">NO RESIDENTS HERE</h2>
-            <img src="./public/no_residents.png" className="no_residents--img" alt="no_residents" />
+            <img src={noResidentsImg} className="no_residents--img" alt="no_residents" />
           </section>
       }
 
