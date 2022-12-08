@@ -113,12 +113,20 @@ button{
 
 .resident_info{
   box-sizing: border-box;
-  background-color: var(--color-principal);
+  background-color:rgb(124, 244, 72 ,0.4);
   width: 320px;
   padding: 2rem;
   border-radius: 1rem;
   max-width: 100% ;
 
+}
+
+.dead {
+  background-color: rgb(255, 0, 0 , 0.6);
+}
+
+.unknown {
+  background-color: #000000;
 }
 
 @media(min-width:750px){

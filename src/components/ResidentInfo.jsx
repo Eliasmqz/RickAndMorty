@@ -12,7 +12,7 @@ useEffect(() => {
 
 
   return (
-    <article className='resident_info'>
+    <article className={`resident_info ${characterInfo?.status.toLowerCase()}`}  >
         <section>
         <img src={characterInfo?.image} alt="img_resident" />
         </section>
@@ -21,6 +21,7 @@ useEffect(() => {
                 <li>Name: {characterInfo?.name}</li>
                 <li>Origin: {characterInfo?.origin.name}</li>
                 <li>Appeareances: {characterInfo?.episode.length}</li>
+                <li>Status: {characterInfo?.status}</li>
             </ul>
         </section>
         
