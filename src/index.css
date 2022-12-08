@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Oswald:wght@200;400;700&display=swap');
+
+:root{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --bg-color: #313d29;
+  --color-principal: #3a6027;
+  --color-text:#ccdac5;
+  --clear-green:#7cf448;
+  --grayish-green:#7e9575;
+  --light-green:#a6f282;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-family: 'Oswald', sans-serif;
+}
+
+.App{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+  justify-content: center;
+}
+
+img{
+  max-width: 100%;
+}
+
+body{
+  margin: 0;
+  background-color: var(--bg-color);
+}
+
+li{
+  list-style: none;
+}
+button{
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--grayish-green);
+  color: var(--light-green);
+  font-size: 1.2rem;
+}
+
+.loading_page{
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading_img{
+  animation: 2.5s ease-in-out loader;
+}
+
+@keyframes loader {
+  0%{transform: scale(0)}
+100%{transform: scale(1)}
+}
+
+
+
+#input_search{
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: var(--clear-green);
+  color: var(--bg-color);
+  font-size: 1.2rem;
+}
+
+.location_card{
+  background-color:rgb(124, 244, 72, 0.4);
+  width: 320px;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.no_residents{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 4rem;
+  gap: 2rem;
+}
+
+.no_residents--txt{
+  font-size: 2rem;
+  color: var(--clear-green);
+}
+
+.resident_container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-width: 260px;
+}
+
+
+.resident_info,
+.location_card{
+  color: var(--color-text);
+}
+
+
+.resident_info{
+  box-sizing: border-box;
+  background-color: var(--color-principal);
+  width: 320px;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 100% ;
+
+}
+
+@media(min-width:750px){
+  .resident_container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+
+  }
+}
